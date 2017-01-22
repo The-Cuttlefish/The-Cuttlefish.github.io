@@ -1,0 +1,385 @@
+.nutrients * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+.nutrients {
+    font: 12px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.nutrients a {
+    color: #696969;
+    text-decoration: underline;
+}
+.nutrients a:hover {
+    text-decoration: none;
+}
+.nutrients p {
+    margin: 10px 0;
+    line-height: 16px;
+}
+#nutrients-intro {
+    width: 385px;
+    margin-bottom: 20px;
+}
+#nutrients-nav {
+    float: left;
+}
+#nutrients-nav .elements {
+    width: 370px;
+    float: left;
+}
+#nutrients-nav .elements li {
+    display: block;
+    float: left;
+    width: 82px;
+    height: 88px;
+    position: relative;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+#nutrients-nav .elements li div {
+    position: relative;
+    width: 82px;
+    height: 88px;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: #fff 2px solid;
+}
+#nutrients-nav .elements li.hover {
+}
+#nutrients-nav .elements li.hover div {
+    top: -2px;
+    left: -2px;
+    width: 86px;
+    height: 92px;
+    z-index: 10;
+}
+#nutrients-nav .elements li.selected div {
+    -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+}
+#nutrients-nav li.clear {
+    clear: both;
+    width: 100%;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+#nutrients-nav .macro div {
+    background: #819d41;
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#719029),color-stop(100%,#829e43));
+    background: -webkit-linear-gradient(45deg,#719029 0%,#829e43 100%);
+    background: -moz-linear-gradient(45deg,#719029 0%,#829e43 100%);
+    background: -ms-linear-gradient(45deg,#719029 0%,#829e43 100%);
+    background: -o-linear-gradient(45deg,#719029 0%,#829e43 100%);
+    background: linear-gradient(45deg,#719029 0%,#829e43 100%);
+}
+#nutrients-nav .macro.hover div,
+#nutrients-nav .macro.selected div {
+    background: #81a138;
+}
+#nutrients-nav .macro.selected div {
+    border-color: #4f6c0a;
+}
+#nutrients-nav .secondary div {
+    background: #317974;
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#10635e),color-stop(100%,#337a75));
+    background: -webkit-linear-gradient(45deg,#10635e 0%,#337a75 100%);
+    background: -moz-linear-gradient(45deg,#10635e 0%,#337a75 100%);
+    background: -ms-linear-gradient(45deg,#10635e 0%,#337a75 100%);
+    background: -o-linear-gradient(45deg,#10635e 0%,#337a75 100%);
+    background: linear-gradient(45deg,#10635e 0%,#337a75 100%);
+}
+#nutrients-nav .secondary.hover div,
+#nutrients-nav .secondary.selected div {
+    background: #27867f;
+}
+#nutrients-nav .secondary.selected div {
+    border-color: #09544f;
+}
+#nutrients-nav .micro div {
+    background: #c37035;
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#bb5b18),color-stop(100%,#c47238));
+    background: -webkit-linear-gradient(45deg,#bb5b18 0%,#c47238 100%);
+    background: -moz-linear-gradient(45deg,#bb5b18 0%,#c47238 100%);
+    background: -ms-linear-gradient(45deg,#bb5b18 0%,#c47238 100%);
+    background: -o-linear-gradient(45deg,#bb5b18 0%,#c47238 100%);
+    background: linear-gradient(45deg,#bb5b18 0%,#c47238 100%);
+}
+#nutrients-nav .micro.hover div,
+#nutrients-nav .micro.selected div {
+    background: #d3661b;
+}
+#nutrients-nav .micro.selected div {
+    border-color: #a04a0d;
+}
+#nutrients-nav .non-fertilizer div {
+    background: #bdc43b;
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#b4bd23),color-stop(100%,#bdc53e));
+    background: -webkit-linear-gradient(45deg,#b4bd23 0%,#bdc53e 100%);
+    background: -moz-linear-gradient(45deg,#b4bd23 0%,#bdc53e 100%);
+    background: -ms-linear-gradient(45deg,#b4bd23 0%,#bdc53e 100%);
+    background: -o-linear-gradient(45deg,#b4bd23 0%,#bdc53e 100%);
+    background: linear-gradient(45deg,#b4bd23 0%,#bdc53e 100%);
+}
+#nutrients-nav .non-fertilizer.hover div,
+#nutrients-nav .non-fertilizer.selected div {
+    background: #a5ae07;
+}
+#nutrients-nav .non-fertilizer.selected div {
+    border-color: #899205;
+}
+#nutrients-nav .element-symbol {
+    line-height: 85px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+}
+#nutrients-nav .element-name {
+    font: 10px 'Lucida Grande','Lucida Sans Unicode','Lucida Sans',Verdana,sans-serif;
+    color: #fffac2;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 65px;
+}
+#nutrients-nav .element-number {
+    color: #fffac2;
+    position: absolute;
+    font-size: 14px;
+    top: 5px;
+    right: 8px;
+}
+#nutrients-nav .legend {
+    clear: both;
+    width: 250px;
+    float: left;
+    margin: 10px 0;
+}
+#nutrients-nav .legend li {
+    font-size: 0.9em;
+    color: #333;
+    clear: both;
+    padding: 2px 0;
+    line-height: 16px;
+    cursor: default;
+}
+#nutrients-nav .legend div {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+}
+#nutrients-nav .legend .macro {
+    background: #819d41;
+}
+#nutrients-nav .legend .secondary {
+    background: #317974;
+}
+#nutrients-nav .legend .micro {
+    background: #c37035;
+}
+#nutrients-nav .legend .non-fertilizer {
+    background: #bdc43b;
+}
+#nutrients-main {
+    width: 508px;
+    clear: none;
+    float: left;
+    position: relative;
+    background: #e8e9e5;
+    height: 850px;
+    margin-left: 25px;
+}
+#nutrients-main.intro {
+    background-image: url(images/nutrients-main-bg.jpg);
+    background-position: 50% 136px;
+    background-repeat: no-repeat;
+}
+#nutrients-main .arrow {
+    width: 25px;
+    height: 35px;
+    background: url(images/nutrients-main-arrow.png) left center no-repeat;
+    position: absolute;
+    top: 310px;
+    left: -25px;
+}
+#nutrients-main .content {
+    width: 475px;
+    margin: 10px auto;
+}
+#nutrients-main li.nutrient {
+    display: none;
+    position: absolute;
+    width: 475px;
+    z-index: 2;
+}
+#nutrients-main p.intro {
+    color: #696969;
+    height: 75px;
+    margin: 10px 0;
+}
+#nutrients-main h1 {
+    font-size: 52px;
+    font-weight: normal;
+    color: #666;
+    line-height: 1;
+    margin: 0 0 6px 0;
+    padding: 0;
+}
+#nutrients-main h1 span {
+    font-weight: bold;
+}
+#nutrients-main .macro h1 span {
+    color: #819d41;
+}
+#nutrients-main .secondary h1 span {
+    color: #317974;
+}
+#nutrients-main .micro h1 span {
+    color: #c37035;
+}
+#nutrients-main .non-fertilizer h1 span {
+    color: #bdc43b;
+}
+.tabs {
+    overflow: hidden;
+}
+.tabs li {
+    list-style: none;
+    display: inline;
+}
+.tabs a {
+    width: 140px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    background: #d3d2ca;
+    color: #696969;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.tabs a.selected {
+    background: #f9f9f8;
+    font-weight: bold;
+}
+.tab-content {
+    height: 600px;
+    background: #f9f9f8;
+    color: #696969;
+}
+.tab-content.tab-2 {
+    height: 630px;
+    padding-top: 20px;
+}
+.tab-content ul {
+    margin: 0 0 15px 25px;
+}
+.tab-content ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+.tab-inner {
+    height: 615px;
+    padding: 0 30px 0 20px;
+    overflow: auto;
+}
+.tab-inner a:after {
+    content: ' >>';
+}
+.tab-content.slideshow p {
+    padding: 15px 20px 5px 20px;
+    margin: 0;
+}
+.tab-content.slideshow p.slideshow-nav {
+    margin: 0;
+    text-align: right;
+    padding-top: 0;
+}
+.tab-content.slideshow p.cite {
+    padding-top: 10px;
+    font-size: 11px;
+    color: #999;
+}
+.tab-content.slideshow p.slideshow-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #7c7c7b;
+}
+.tab-content.slideshow a:hover {
+    color: #696969;
+}
+.tab-content.slideshow a.prev {
+    float: left;
+}
+.tab-content .slides {
+    width: 434px;
+    overflow: hidden;
+    height: 275px;
+    line-height: 0;
+    font-size: 0;
+    margin: 10px auto;
+    border: #e8e9e5 4px solid;
+}
+.tab-content .slides img {
+    width: 433px;
+    border: #fff 1px solid;
+}
+.dd_more_link {
+    display: inline-block;
+    color: #ffffff !important;
+    background: #bdc53e;
+    padding: 3px 9px;
+    text-decoration: none !important;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+}
+.dd_more_link:after {
+}
+.dd_more_link:hover {
+    background: #a5ae07;
+}
+.photosTab {
+    width: 176px !important;
+}

@@ -1,0 +1,1067 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font: 11px/1.75 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+}
+h1 {
+    font: bold 28px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #b7581a;
+    margin: 0 0 10px;
+    display: inline;
+}
+h2 {
+    font: normal 22px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #b4b0a4;
+    display: inline;
+}
+h3 {
+    font: bold 16px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+    text-transform: uppercase;
+    display: inline;
+}
+h4 {
+    font: bold 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+    display: inline;
+}
+h5 {
+    font: bold 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+    text-transform: uppercase;
+    display: inline;
+}
+h6 {
+    font: 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-weight: normal !important;
+}
+a:link {
+    color: #696969;
+    text-decoration: underline;
+}
+a:visited {
+    color: #696969;
+    text-decoration: underline;
+}
+a:hover {
+    color: #696969;
+    text-decoration: none;
+}
+a:active {
+    color: #696969;
+    text-decoration: none;
+}
+.p18 {
+    font-size: 18px;
+}
+.p16 {
+    font-size: 16px;
+}
+.p12 {
+    font-size: 12px;
+}
+.clear {
+    clear: both;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+img {
+    border: none;
+}
+sup {
+    font-size: 0.7em !important;
+}
+sup,
+ sub {
+    vertical-align:  baseline;
+    position:  relative;
+    top:  -0.6em;
+}
+sub {
+    top:  0.6em;
+}
+hr {
+    background: #b4b0a4;
+}
+.shadow {
+    -moz-box-shadow: 0px 3px 8px #666666;
+    -webkit-box-shadow: 0px 3px 8px #666666;
+    box-shadow: 0px 3px 8px #666666;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=' #666666 ')';
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#666666');
+}
+.button,
+input.gsc-search-button {
+    text-decoration: none !important;
+    font: bold 11px 'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    padding: 6px !important;
+    border: 2px solid #7c9a42 !important;
+    vertical-align: top !important;
+}
+.button:hover,
+.button:active,
+input.gsc-search-button:hover,
+input.gsc-search-button:active {
+    border: 3px solid #a4ebf1 !important;
+}
+select {
+    background: #b4b0a4;
+    font: bold 12px/1.75 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    margin: 25px 0;
+}
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+/* @group Callout */
+.calloutContent {
+    padding-top: 15px;
+    padding-left: 5px;
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+}
+.callout {
+    width: 33.3%;
+    float: left;
+}
+.callout p {
+    font: 11px/1.75 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 0 10px;
+}
+.callout h3 {
+    padding: 0 10px;
+    margin-bottom: 0 !important;
+}
+.callout-video {
+    position: relative;
+}
+.calloutButtons {
+    padding-top: 15px;
+}
+.calloutButtons div {
+    padding-left: 14px;
+    width: 310px;
+    display: inline-table;
+}
+.calloutContent2 {
+    padding-top: 35px;
+    padding-left: 5px;
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+}
+/* @end */
+/* @group Header */
+#headerWrap {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    z-index: 100;
+}
+.header {
+    float: none;
+    width: 980px;
+    height: 75px;
+    margin: 0 auto 0;
+}
+.header .left {
+    float: left;
+    clear: left;
+}
+.header .left .logo {
+    margin-top: 16px;
+}
+.header .right {
+    float: right;
+    clear: right;
+}
+.header .right .logo {
+    margin-top: 15px;
+}
+.header .right .search {
+    position: relative;
+    top: 17px;
+    right: 105px;
+}
+/* @end */
+/* @group Content */
+#pageWrap {
+    background-color: #fff;
+}
+#topNavWrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+}
+#content {
+    width: 980px;
+    margin: 0 auto;
+    min-height: 850px;
+    background-color: #fff !important;
+    padding-bottom: 168px;
+    position: relative;
+}
+.videoPageWrap {
+    width: 724px;
+    padding: 15px 25px;
+}
+.contentPadding {
+    padding: 25px;
+}
+.subContentHeadline {
+    font: bold 28px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: auto;
+    margin: 0 0 15px;
+    width: 980px;
+    display: inline;
+    color: #b7581a;
+    width: 100%;
+}
+.subColumnWrap {
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+}
+.subColumnHeadline {
+    font: bold 17px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+    text-transform: uppercase;
+    display: inline;
+}
+.subColumnLeft {
+    width: 48.0%;
+    margin-right: 2%;
+    float: left;
+}
+.subColumnLeftWide {
+    width: 73.0%;
+    margin-right: 2%;
+    float: left;
+}
+.subColumnRight {
+    width: 48.0%;
+    margin-left: 2%;
+    float: right;
+}
+.subColumnRightNarrow {
+    width: 23%;
+    margin-left: 1%;
+    float: right;
+}
+div.hrLine:before {
+    height: 1px;
+    background: #b4b0a4;
+    width: 35%;
+    display: block;
+    content: '';
+    margin: 30px auto;
+}
+.titleBox {
+    font: bold 20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    margin: 0 12px;
+    background-color: #b4b0a4;
+    color: #fff;
+}
+.shadowBoxPadding {
+    padding: 30px;
+}
+.tallShadowBox {
+    background-repeat: no-repeat;
+    background-image: url(/Agro_Box_Tall.jpg?v=7);
+    background-position: top left;
+    width: 485px;
+    height: 610px;
+    margin-top: -2px;
+}
+.shortShadowBoxMap {
+    background-repeat: no-repeat;
+    background-image: url(/Agro_Map.jpg?v=2);
+    background-position: top left;
+    width: 485px;
+    height: 305px;
+}
+.shadowBoxMapCopy {
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+}
+.shortShadowBox {
+    background-repeat: no-repeat;
+    background-image: url(/Agro_Box_Short.jpg?v=2);
+    background-position: top left;
+    width: 485px;
+    height: 305px;
+    margin-top: -9px;
+}
+.cropListComments {
+    font-size: 10px;
+    font-style: italic;
+}
+.product img {
+    width: 35%;
+    float: left;
+    border: 1px solid #bbbbbb;
+}
+.product .right {
+    font-size: 18px;
+    width: 59%;
+    margin-left: 4%;
+    float: left;
+}
+.product .bottom {
+    clear: both;
+    padding-top: 15px;
+}
+.st_sharethis_custom {
+    background: url(/ShareThis.png?v=3) no-repeat scroll left top transparent;
+    padding: 0 0 10px 23px;
+    cursor: pointer;
+    font: bold 15px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #78776e;
+    text-transform: uppercase;
+}
+.shareThis {
+    text-align: right;
+    clear: both;
+    margin: 10px 0;
+}
+.pagination {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.regionalUpdatesMap img {
+    margin-left: 153px;
+}
+.agrisight {
+    float: left;
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+}
+.agrisight img {
+    width: 100%;
+    float: left;
+    border: 1px solid #bbbbbb;
+}
+.agrisight .left {
+    width: 45%;
+    float: left;
+    margin-right: 3%;
+    overflow: hidden;
+}
+.agrisight .right {
+    width: 51%;
+    float: right;
+}
+.agrisight .bottom {
+    clear: both;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+/* @end */
+/* @group Region */
+.region .tips {
+    width: 60.0%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 30px;
+}
+.region .map {
+    width: 35%;
+    float: left;
+    margin-left: 2%;
+}
+.region .map img {
+    width: 300px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.region .updates {
+    width: 73.0%;
+    margin-right: 2%;
+}
+.region .links {
+    position: absolute;
+    top: 365px;
+    right: 95px;
+}
+.region .links ul,
+.buttonList ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+/* @end */
+/* @group SideBar */
+.sideBar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+}
+.sideBar .title {
+    font: bold 11px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    padding: 6px;
+    background-color: #b4b0a4;
+    color: #fff;
+}
+.sideBar .container {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.sideBar .caption {
+    font: 11px/1.75 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #696969;
+    margin: 20px 0;
+}
+.sideBar a {
+    display: block;
+}
+.buttonList img {
+    width: 85%;
+}
+.agriSightItem {
+    margin: 20px 0;
+}
+.agriSightItem img {
+    width: 75%;
+    border: 1px solid #bbbbbb;
+}
+.agriSightItem p {
+    margin: .25em 0;
+}
+/* @end */
+/* @group Videos */
+.video-wrapper {
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-container a,
+.callout-video a,
+.videoGalleryItem a,
+.fertFactsVideos a,
+.libVideo a {
+    background-image: url(/Play_Icon.png?v=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    margin: 0;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+.video-container img {
+    width: 100%;
+}
+.video-caption {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* @end */
+/* @group Fertility Facts Videos */
+.fertFactsVideos {
+    margin: 15px 0;
+}
+.fertFactsVideos p {
+    font-size: 12px;
+    margin: .25em 0;
+}
+.fertFactsVideos .video {
+    width: 205px;
+}
+.fertFactsVideos div div {
+    position: relative;
+}
+/* @end */
+/* @group Gallery */
+.videoGalleryItem {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 320px;
+}
+.videoGalleryItem p {
+    font: 11px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    word-wrap: break-word;
+}
+.videoGalleryItem .thumb {
+    position: relative;
+}
+.videoGalleryItem .copy {
+    padding: 0 10px;
+    width: 300px;
+}
+.galleryItem {
+    float: left;
+    margin: 5px 0;
+    padding: 0;
+    width: 99%;
+}
+.galleryItem .left {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    overflow: hidden;
+}
+.galleryItem .right {
+    width: 67%;
+    float: right;
+}
+.galleryItem .bottom {
+    clear: both;
+    padding-top: 15px;
+}
+.galleryItem p {
+    margin: .25em 0;
+}
+.blogItem {
+    float: left;
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+}
+.blogItem .left {
+    width: 20%;
+    float: left;
+    margin-right: 3%;
+    overflow: hidden;
+}
+.blogItem .right {
+    width: 77%;
+    float: right;
+}
+.blogItem .bottom {
+    clear: both;
+    padding-top: 15px;
+}
+.blogItem p {
+    margin: .25em 0;
+}
+.thumb220 {
+    width: 220px;
+    height: 220px;
+}
+.thumb130 {
+    width: 130px;
+    height: 130px;
+}
+.thumbRight {
+    margin-left: 3%;
+    float: right;
+}
+.thumbLeft {
+    margin-right: 3%;
+    float: left;
+}
+/* @end */
+/* @group Footer */
+#footerWrap {
+    width: 100%;
+    height: 168px;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #fff;
+}
+#footerTopWrap {
+    background-color: #b4b0a4;
+}
+.footerTop {
+    width: 980px;
+    height: 100px;
+    margin: 0 auto 0;
+    font-size: 12px;
+    color: #fff;
+}
+.footerTop a {
+    color: #fff;
+}
+.footerTop .left {
+    float: left;
+    clear: left;
+    width: 395px;
+    margin-top: 30px;
+}
+.footerTop .center {
+    float: left;
+    width: 365px;
+}
+.footerTop .agrisight {
+    overflow: hidden;
+}
+.footerTop .agrisight img {
+    width: 116px;
+    border: none;
+}
+.footerTop .agrisight p {
+    margin-top: -1.75em;
+    font-size: 14px;
+    font-style: italic;
+}
+.footerTop .agrisight h6 {
+    margin-top: 27px;
+}
+.footerTop .subscribe p {
+    margin-top: -28px;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 14px;
+}
+.footerTop .subscribe h6 {
+    margin-top: 10px;
+}
+.footerTop .agrisight>tbody>tr>td {
+    vertical-align: top;
+}
+#footerTop .right {
+    float: right;
+    clear: right;
+    width: 215px;
+}
+.social {
+    margin-top: 15px;
+    float: right;
+}
+.social p {
+    font-size: 14px;
+    font-weight: bold;
+}
+.social a {
+    margin-left: 10px;
+}
+#footerBottomWrap {
+    background-color: #fff;
+}
+.footerBottom {
+    width: 980px;
+    margin: 0 auto 0;
+    font-size: 12px;
+}
+.footerBottom .left {
+    float: left;
+    clear: left;
+    margin-top: 27px;
+    font-size: 9px;
+}
+.footerBottom .right {
+    float: right;
+    clear: right;
+    margin: 25px 0 15px 0;
+}
+/* @end */
+/* @group Buttons */
+.btn-soil_fertility {
+    background: url(/SoilFertility.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-soil_fertility:active,
+.btn-soil_fertility:hover,
+.btn-soil_fertility-selected {
+    background: url(/SoilFertility.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-fertilizer_application {
+    background: url(/FertilizerApp.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-fertilizer_application:active,
+.btn-fertilizer_application:hover,
+.btn-fertilizer_application-selected {
+    background: url(/FertilizerApp.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-nutrient_management {
+    background: url(/NutrientManagement.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-nutrient_management:active,
+.btn-nutrient_management:hover,
+.btn-nutrient_management-selected {
+    background: url(/NutrientManagement.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-macronutrients {
+    background: url(/Macronutrients.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-macronutrients:active,
+.btn-macronutrients:hover,
+.btn-macronutrients-selected {
+    background: url(/Macronutrients.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-micronutrients {
+    background: url(/Micronutrients.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-micronutrients:active,
+.btn-micronutrients:hover,
+.btn-micronutrients-selected {
+    background: url(/Micronutrients.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-tillage {
+    background: url(/Tillage.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-tillage:active,
+.btn-tillage:hover,
+.btn-tillage-selected {
+    background: url(/Tillage.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-from_the_field {
+    background: url(/FromTheField.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-from_the_field:active,
+.btn-from_the_field:hover,
+.btn-from_the_field-selected {
+    background: url(/FromTheField.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-timely_topics {
+    background: url(/TimelyTopics.png?v=1) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-timely_topics:active,
+.btn-timely_topics:hover,
+.btn-timely_topics-selected {
+    background: url(/TimelyTopics.png?v=1) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-videos {
+    background: url(/Video.png?v=2) no-repeat 0 0;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+.btn-videos:active,
+.btn-videos:hover,
+.btn-videos-selected {
+    background: url(/Video.png?v=2) no-repeat 0 -66px;
+    width: 177px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    float: left;
+}
+/* @end */
+#content1 {
+}
+.agrifactstitlebar {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+    line-height: 40px;
+}
+.maintitlecopy {
+    padding-left: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main {
+    background-color: #98b42c;
+}
+.corn {
+    background-color: #ffb810;
+}
+.soybeans {
+    background-color: #6c8824;
+}
+.alfalfa {
+    background-color: #035853;
+}
+.durumwheat {
+    background-color: #e6dca7;
+}
+.canola {
+    background-color: #c5ab00;
+}
+.rice {
+    background-color: #9eab05;
+}
+.sugar {
+    background-color: #5b491f;
+}
+.cotton {
+    background-color: #7d99ba;
+}
+.agrifactstitle {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.agrifactwidget {
+    width: 47%;
+    float: left;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+.agrifactwidget img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 75px;
+}
+.agrifactbutton {
+    padding: 4px 15px;
+    background-color: #5a5a5a;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 4px;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.agrifactbutton a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.agrifactbutton a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+.agrifactbutton a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+.agrifactcopy {
+    float: left;
+    width: 48%;
+}
+/* @group breadcrumb */
+.breadcrumb {
+    font-size:  10px;
+    color:  #696969;
+    margin-bottom:  35px;
+}
+.breadcrumb ul {
+    list-style-type:  none;
+    overflow:  hidden;
+    display:  inline;
+}
+.breadcrumb ul li {
+    list-style-type:  none;
+    float:  left;
+    padding-right:  4px;
+}
+/* @end */

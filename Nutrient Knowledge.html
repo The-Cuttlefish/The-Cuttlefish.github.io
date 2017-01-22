@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.cropnutrition.com/nutrient-knowledge -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>
+Nutrient Knowledge			</title>
+<link href="./Nutrient Knowledge_files/navigationMenu" rel="stylesheet" type="text/css">
+<link href="./Nutrient Knowledge_files/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="./Nutrient Knowledge_files/dataTable" rel="stylesheet" type="text/css">
+<link href="./Nutrient Knowledge_files/SiteStyleSheet" rel="stylesheet" type="text/css">
+<link href="./Nutrient Knowledge_files/nutrients.css" rel="stylesheet" type="text/css">
+<link href="./Nutrient Knowledge_files/bkg-corn" rel="stylesheet" type="text/css">
+			<script type="text/javascript" async="" src="./Nutrient Knowledge_files/ga.js"></script><script type="text/javascript" async="" src="./Nutrient Knowledge_files/ga(1).js"></script><script type="text/javascript" src="./Nutrient Knowledge_files/jquery.js">
+			</script><style type="text/css"></style>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/PicassoRuntime.js">
+			</script>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/jquery-1.9.1.js">
+			</script>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/jquery.fancybox.pack.js">
+			</script>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/jquery.flexslider-min.js">
+			</script>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/jquery.cookie.js">
+			</script>
+			<script type="text/javascript" src="./Nutrient Knowledge_files/nutrients.js">
+			</script>
+
+<script>
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+            $('<img/>')[0].src = this;
+        });
+    }
+    
+    preload([
+    	'/Twitter.png',
+    	'/FaceBook.png',
+    	'/YouTube.png',
+        '/AgriSight_Issue1_tilted.png',
+        '/Trusted-Crop-Nutrition-Expertise-BLACK.png',
+        '/Mosaic-CropNutrition-RGB-web.jpg',
+        '/Search_Icon.png'
+    ]);
+</script>
+
+<style type="text/css">  
+    .button, input.gsc-search-button {           
+	background: #6e8f2d !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6e8f2d 1%, #6e8f2d 50%, #7C9A42 50%, #7C9A42 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#6e8f2d), color-stop(50%,#6e8f2d), color-stop(50%,#7C9A42), color-stop(100%,#7C9A42)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6e8f2d 1%,#6e8f2d 50%,#7C9A42 50%,#7C9A42 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6e8f2d 1%,#6e8f2d 50%,#7C9A42 50%,#7C9A42 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6e8f2d 1%,#6e8f2d 50%,#7C9A42 50%,#7C9A42 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  #6e8f2d 1%,#6e8f2d 50%,#7C9A42 50%,#7C9A42 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e8f2d', endColorstr='#7C9A42',GradientType=0 ) !important; /* IE6-9 */
+    }
+</style>
+
+<script>
+    $(function changeWidth(){
+        var items = $('#topNavigation ul li').not('#topNavigation ul ul li').size();
+        var itemPct = (100/items);
+ 
+        $('#topNavigation ul li').not('#topNavigation ul ul li').css({'width': itemPct + '%'});
+        $('#topNavigation ul').not('#topNavigation ul ul').css({'text-align': 'center'});
+    });
+</script>
+
+<script>
+$(document).ready(function() {
+    $("table tr:nth-child(even)").addClass("evenRow");
+    $("table tr:nth-child(odd)").addClass("oddRow");
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".video-modal").click(function() {
+            $.fancybox({
+                'title'			: this.title,
+                'width'		        : 569,
+                'height'		: 354,
+        	'padding'		: 20,
+                'href'			: this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/') + '?rel=0&amp;version=3&amp;enablejsapi=1&amp;autoplay=1',
+                'type'			: 'swf',
+                'swf'			: {
+                    'wmode'		: 'transparent',
+                    'allowfullscreen'	: 'true',
+                    'id'		: 'ytvideo',
+                    'allowscriptaccess' : 'always'    
+                }
+            });	
+            return false;
+        });
+               
+        $(".image-modal").click(function() {
+            $.fancybox({
+                'title'			: this.title,
+                'width'		        : 569,
+                'height'		: 354,
+        	'padding'		: 20,
+                'href'			: this.href,
+                'type'			: 'image'
+            });	
+            return false;
+        });
+        
+        $(".contact-modal").click(function() {
+            $.fancybox({
+		'title'			: this.title,
+                'width'		        : 400,
+                'height'		: 610,
+                'href'			: this.href,
+                'type'			: 'iframe'
+            });	
+            return false;
+        });
+        
+        $(".iframe-modal").click(function() {
+            $.fancybox({
+		'title'			: this.title,
+                'width'		        : 569,
+                'height'		: 354,
+                'padding'		: 20,
+                'href'			: this.href,
+                'type'			: 'iframe'
+            });	
+            return false;
+        });
+        
+    });
+</script>
+
+<script type="text/javascript">   
+  //Google Analytics  
+  var _gaq = _gaq || [];
+    
+  _gaq.push(['_setAccount', 'UA-40744074-1']);
+  _gaq.push(['_trackPageview']);
+    
+  (function() {
+    var ga = document.createElement('script'); 
+    ga.type = 'text/javascript'; 
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
+        + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        //Footer Social Icons
+        $('.social a').click(function(){
+            var e = $(event.currentTarget);
+            var s = document.location.pathname;
+            s = s.substr(s.indexOf('/') + 1);
+        
+            _gaq.push(['_trackEvent', 'Social Media Channels', e.attr('title'), s]);
+        });
+        
+        //Documents
+        $('a').click(function(){
+            
+            var p = $(this).attr('href').toLowerCase();
+            var f = p.split('?')[0];
+            f = f.substr(f.indexOf(".") + 1);
+            
+            var t = p.split('.')[0];
+            t = t.substr(t.indexOf('/') + 1);
+            
+            var s = document.location.pathname;
+            s = s.substr(s.indexOf('/') + 1);
+                                      
+            if ( p.match( /(.pdf|.ppt|.xls|.doc)/ ) ) {
+                           
+                _gaq.push(['_trackEvent', f, t, s]);
+            }
+
+        });
+    
+    });
+</script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    //element selection
+    $('.macro, .secondary, .micro, .non-fertilizer').click(function(){
+        
+        var e = $(this).find('.element-symbol').html();
+        
+        _gaq.push(['_trackEvent', 'Periodic Table', e]);
+    
+    });
+
+});
+</script>		</head>
+		<body itemid="body">
+	<div id="wrapper">
+		<div id="headerWrap" class="shadow">
+			<div class="header">
+				<div class="left">
+<a href="http://www.cropnutrition.com/home" target="_self"><img class="logo" alt="CropNutrition.com" title="CropNutrition.com" src="./Nutrient Knowledge_files/Mosaic-CropNutrition-RGB-web.jpg"></a> 				</div>
+				<div class="right">
+<img class="logo" alt="Trusted Crop Nutrition Expertise" src="./Nutrient Knowledge_files/Trusted-Crop-Nutrition-Expertise-BLACK.png">				</div>
+				<div class="right">
+<a href="http://www.cropnutrition.com/cropnutrition.com-library" target="_self"><img class="search" alt="Search" title="Search" src="./Nutrient Knowledge_files/Search_Icon.png"></a>				</div>
+			</div>
+		</div>
+		<div id="pageWrap">
+			<div id="topNavWrap">
+				<div id="topNavigation">
+
+        
+            <ul style="text-align: center;">
+         
+     
+        
+
+            <li class="pagewhy-cropnutritioncom" style="width: 20%;">
+                <a href="http://www.cropnutrition.com/why-cropnutrition.com">
+                    <span>Why CropNutrition.com</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pagefertilizer-fundamentals" style="width: 20%;">
+                <a href="http://www.cropnutrition.com/fertilizer-fundamentals">
+                    <span>Fertilizer Fundamentals</span>
+                </a>
+                 
+        
+            <ul>
+         
+     
+        
+
+            <li class="pageefficient-fertilizer-use-guide">
+                <a href="http://www.cropnutrition.com/efficient-fertilizer-use-guide">
+                    <span>Efficient Fertilizer Use Guide</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pageresearch">
+                <a href="http://www.cropnutrition.com/research">
+                    <span>Research</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pagepremium-crop-nutrients">
+                <a href="http://www.cropnutrition.com/premium-crop-nutrients">
+                    <span>Premium Crop Nutrients</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pageunfenced">
+                <a href="http://www.cropnutrition.com/unfenced">
+                    <span>Unfenced Magazine</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pagesixnutrients">
+                <a href="http://www.cropnutrition.com/sixnutrients">
+                    <span>Six Nutrients</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+            </ul>
+         
+    
+            </li>
+
+         
+     
+        
+
+            <li class="menuitem-selected pagenutrient-knowledge" style="width: 20%;">
+                <a href="./Nutrient Knowledge_files/Nutrient Knowledge.html">
+                    <span>Nutrient Knowledge</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pageagronomy-resource-center" style="width: 20%;">
+                <a href="http://www.cropnutrition.com/agronomy-resource-center">
+                    <span>Agronomy Resource Center</span>
+                </a>
+                 
+        
+            <ul>
+         
+     
+        
+
+            <li class="pageapplication-and-nutrient-removal">
+                <a href="http://www.cropnutrition.com/application-and-nutrient-removal">
+                    <span>Application and Nutrient Removal</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pageblog">
+                <a href="http://www.cropnutrition.com/blog">
+                    <span>Blog</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+
+            <li class="pagefertility-facts">
+                <a href="http://www.cropnutrition.com/fertility-facts">
+                    <span>Fertility Facts</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+            </ul>
+         
+    
+            </li>
+
+         
+     
+        
+
+            <li class="pagecropnutritioncom-library" style="width: 20%;">
+                <a href="http://www.cropnutrition.com/cropnutrition.com-library">
+                    <span>CropNutrition.com Library</span>
+                </a>
+                 
+            </li>
+
+         
+     
+        
+            </ul>
+         
+    				</div>
+			</div>
+			<div id="content">
+				<div class="contentPadding">
+					<div id="nutrients-nav" class="nutrients">
+	<div id="nutrients-intro">
+		<h1>Periodic Table of Crop Nutrients</h1>
+		<p>Learn about the 17 essential plant nutrients and their roles in plant health. All crops must have an adequate supply of each of these 17 nutrients to produce optimum yields. In accordance with The Law of the Minimum, if one or more nutrients are lacking in the soil, crop yields will be reduced, even though an adequate amount of other elements is available. Crop yields may be limited by the element that is in shortest supply, so it helps to understand the key nutrients that are needed to make your crop thrive.</p>
+	</div>
+
+	<ol class="elements">
+		
+		<!-- MACRO -->
+		
+		<li class="macro">
+			<div>
+				<strong class="element-symbol">N</strong>
+				<span class="element-name">Nitrogen</span>
+				<span class="element-number">7</span>
+			</div>
+		</li>
+		<li class="macro">
+			<div>
+				<strong class="element-symbol">P</strong>
+				<span class="element-name">Phosphorus</span>
+				<span class="element-number">15</span>
+			</div>
+		</li>
+		<li class="macro">
+			<div>
+				<strong class="element-symbol">K</strong>
+				<span class="element-name">Potassium</span>
+				<span class="element-number">19</span>
+			</div>
+		</li>
+		
+		<li class="clear"></li>
+		
+		<!-- SECONDARY -->
+		
+		<li class="secondary">
+			<div>
+				<strong class="element-symbol">Mg</strong>
+				<span class="element-name">Magnesium</span>
+				<span class="element-number">12</span>
+			</div>
+		</li>
+		<li class="secondary">
+			<div>
+				<strong class="element-symbol">S</strong>
+				<span class="element-name">Sulfur</span>
+				<span class="element-number">16</span>
+			</div>
+		</li>
+		<li class="secondary">
+			<div>
+				<strong class="element-symbol">Ca</strong>
+				<span class="element-name">Calcium</span>
+				<span class="element-number">20</span>
+			</div>
+		</li>
+		
+		<li class="clear"></li>
+		
+		<!-- MICRO -->
+		
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">B</strong>
+				<span class="element-name">Boron</span>
+				<span class="element-number">5</span>
+			</div>
+		</li>
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">Cl</strong>
+				<span class="element-name">Chlorine</span>
+				<span class="element-number">17</span>
+			</div>
+		</li>
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">Mn</strong>
+				<span class="element-name">Manganese</span>
+				<span class="element-number">25</span>
+			</div>
+		</li>
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">Fe</strong>
+				<span class="element-name">Iron</span>
+				<span class="element-number">26</span>
+			</div>
+		</li>
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">Ni</strong>
+				<span class="element-name">Nickel</span>
+				<span class="element-number">28</span>
+			</div>
+		</li>
+        <li class="micro">
+			<div>
+				<strong class="element-symbol">Cu</strong>
+				<span class="element-name">Copper</span>
+				<span class="element-number">29</span>
+			</div>
+		</li>
+		<li class="micro">
+			<div>
+				<strong class="element-symbol">Zn</strong>
+				<span class="element-name">Zinc</span>
+				<span class="element-number">30</span>
+			</div>
+		</li>
+		<li class="micro hover selected">
+			<div>
+				<strong class="element-symbol">Mo</strong>
+				<span class="element-name">Molybdenum</span>
+				<span class="element-number">42</span>
+			</div>
+		</li>
+		
+		<li class="clear"></li>
+		
+		<!-- NON-FERTILIZER -->
+		
+		<li class="non-fertilizer">
+			<div>
+				<strong class="element-symbol">H</strong>
+				<span class="element-name">Hydrogen</span>
+				<span class="element-number">1</span>
+			</div>
+		</li>
+		<li class="non-fertilizer">
+			<div>
+				<strong class="element-symbol">C</strong>
+				<span class="element-name">Carbon</span>
+				<span class="element-number">6</span>
+			</div>
+		</li>
+		<li class="non-fertilizer">
+			<div>
+				<strong class="element-symbol">O</strong>
+				<span class="element-name">Oxygen</span>
+				<span class="element-number">8</span>
+			</div>
+		</li>
+		
+	</ol>
+	
+	<ul class="legend">
+		<li><div class="macro"></div> Macronutrients</li>
+		<li><div class="secondary"></div> Secondary Nutrients</li>
+		<li><div class="micro"></div> Micronutrients</li>
+		<li><div class="non-fertilizer"></div> Non-Fertilizer Elements</li>
+	</ul>					</div>
+					<div id="nutrients-main" class="nutrients">
+	<div class="arrow"></div>
+	<div class="content">
+		
+		<ul>
+		
+			<!-- MACRO -->
+			
+			<!-- N -->
+			
+			<li class="nutrient macro" id="element-N" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>N</span> Nitrogen</h1>
+				<p class="intro">Nitrogen (N) is essential for plant growth and is part of every living cell. It plays many roles in plants and is necessary for chlorophyll synthesis. Plants take up most of their N as the ammonium (NH<sub>4</sub><sup>+</sup>) or nitrate (NO<sub>3</sub><sup>-</sup>) ion. Some direct absorption of urea can occur through the leaves, and small amounts of N are obtained from materials such as water-soluble amino acids.</p>
+                
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-N.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					<p>Nitrogen surrounds all plants in our atmosphere. In fact, every acre of the Earth’s surface is covered by thousands of pounds of this essential nutrient, but because atmospheric gaseous nitrogen presents itself as inert nitrogen (N<sub>2</sub>) molecules, this nitrogen isn’t directly available to the plants that need it to grow, develop and reproduce. Despite its identity as one of the most abundant elements on Earth, deficient nitrogen is probably the most common nutritional problem affecting plants worldwide.</p>
+					<p>Healthy plants often contain 3 to 4 percent nitrogen in their above-ground tissues. These are much higher concentrations than those of any other nutrient except carbon, hydrogen and oxygen — nutrients not of soil fertility management concern in most situations. Nitrogen is an important component of many important structural, genetic and metabolic compounds in plant cells. It’s a major element in chlorophyll, the compound by which plants use sunlight energy to produce sugars from water and carbon dioxide, or, in other words, photosynthesis.</p>
+					<p>Nitrogen is also a major component of amino acids, the building blocks of proteins. Some proteins act as structural units in plant cells, while others act as enzymes, making possible many of the biochemical reactions on which life is based. Nitrogen appears in energy-transfer compounds, such as ATP (adenosine triphosphate), which allows cells to conserve and use the energy released in metabolism. Finally, nitrogen is a significant component of nucleic acids such as DNA, the genetic material that allows cells (and eventually whole plants) to grow and reproduce. With the exception of photosynthesis, nitrogen plays the same roles in animals, too. Without nitrogen, there would be no life as we know it.</p>
+					<p>Adequate nitrogen produces a dark green color in the leaves, caused by the high concentration of chlorophyll. Nitrogen deficiency results in chlorosis (a yellowing) of the leaves because of the declining chlorophyll. This yellowing starts first on oldest leaves, then develops on younger ones as the deficiency becomes more severe. Slow growth and stunted plants are also indicators of nitrogen deficiency. Small grains and other grass-type plants tiller less when nitrogen is in short supply.</p>
+                    <p>To dig even deeper into Nitrogen, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=macronutrients&sub=nitrogen" class="dd_more_link">click here</a></p>
+                    <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+						
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="nitrogen" data-count="13"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- P -->
+			
+			<li class="nutrient macro" id="element-P" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>P</span> Phosphorus</h1>
+				<p class="intro">One of three primary nutrients, phosphorus (P) is essential for plant growth, and a plant must access it to complete its normal production cycle. Plants absorb P from the soil as primary and secondary orthophosphates (H<sub>2</sub>PO<sub>4</sub><sup>-</sup> and HPO<sub>4</sub><sup>2-</sup>).</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2" class="">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab selected">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1" style="display: none;"><img src="./Nutrient Knowledge_files/nutrient-facts-P.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>Phosphorus is a vital component of adenosine triphosphate (ATP), the “energy unit” of plants. ATP forms during photosynthesis, has P in its structure, and processes from the beginning of seedling growth through to the formation of grain and maturity.</p>
+                    <p>The general health and vigor of all plants requires P. Some specific growth factors associated with P include stimulated root development, increased stalk and stem strength, improved flower formation and seed production, more uniform and earlier crop maturity, increased nitrogen- fixing capacity of legumes, improvements in crop quality, and increased resistance to plant diseases.</p>
+					<p>Phosphorus deficiency is more difficult to diagnose than a deficiency of N or potassium (K). Crops usually display no obvious symptoms of P deficiency other than a general stunting of the plant during early growth, and by the time a visual deficiency is recognized, it may be too late to correct in annual crops.</p>
+					<p>Some crops, such as corn, tend to show an abnormal discoloration when P is deficient. The plants are usually dark bluish-green in color, with leaves and stem becoming purplish. The genetic makeup of the plant influences the degree of purple, and some hybrids show much greater discoloration than others. The purplish color results from the accumulation of sugars, which favors the synthesis of anthocyanin (a purplish pigment,) which occurs in the leaves of the plant.</p>
+					<p>Phosphorus is highly mobile in plants and, when deficient, may translocate from old plant tissue to young, actively growing areas. Consequently, early vegetative responses to P are often observed. As a plant matures, P translocates into the fruiting areas of the plant, where the formation of seeds and fruit requires high energy. Phosphorus deficiencies late in the growing season affect both seed development and normal crop maturity. The percentage of the total amount of each nutrient taken up is higher for P late in the growing season than for either N or K.</p>
+                    <p>To dig even deeper into Phosphorus, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=macronutrients&sub=phosphorus" class="dd_more_link">click here</a></p>
+					<p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+						
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow inited" style="">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="phosphorus" data-count="15" style="position: relative;"><img src="./Nutrient Knowledge_files/phosphorus_1.jpg" style="position: absolute; top: 0px; z-index: 15; opacity: 1; display: block;"><img src="http://www.cropnutrition.com/images/photos/P/phosphorus_2.jpg" style="position: absolute; top: 0px; z-index: 14; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_3.jpg" style="position: absolute; top: 0px; z-index: 13; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_4.jpg" style="position: absolute; top: 0px; z-index: 12; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_5.jpg" style="position: absolute; top: 0px; z-index: 11; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_6.jpg" style="position: absolute; top: 0px; z-index: 10; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_7.jpg" style="position: absolute; top: 0px; z-index: 9; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_8.jpg" style="position: absolute; top: 0px; z-index: 8; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_9.jpg" style="position: absolute; top: 0px; z-index: 7; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_10.jpg" style="position: absolute; top: 0px; z-index: 6; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_11.jpg" style="position: absolute; top: 0px; z-index: 5; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_12.jpg" style="position: absolute; top: 0px; z-index: 4; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_13.jpg" style="position: absolute; top: 0px; z-index: 3; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_14.jpg" style="position: absolute; top: 0px; z-index: 2; display: none;"><img src="./Nutrient Knowledge_files/phosphorus_15.jpg" style="position: absolute; top: 0px; z-index: 1; display: none; opacity: 0;"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- K -->
+			
+			<li class="nutrient macro" id="element-K" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>K</span> Potassium</h1>
+				<p class="intro">Potassium (K) is one of the essential nutrients and is taken up in significant amounts by crops. Potassium is vital to photosynthesis, protein synthesis and many other functions in plants. It’s classified as a macronutrient, as are nitrogen (N) and phosphorus (P). Plants take up K in its ionic form (K<sup>+</sup>).</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-K.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+										
+					<p>While potassium doesn’t constitute any plant structures or compounds, it plays a part in many important regulatory roles in the plant. It’s essential in nearly all processes needed to sustain plant growth and reproduction, including:</p>
+					<ul>
+						<li>photosynthesis</li>
+						<li>translocation of photosynthates</li>
+						<li>plant respiration</li>
+						<li>protein synthesis</li>
+						<li>control of ionic balance</li>
+						<li>breakdown of carbohydrates, which provides energy for plant growth</li>
+						<li>regulation of plant stomata and water use</li>
+						<li>activation of plant enzymes</li>
+						<li>disease resistance and recovery</li>
+						<li>turgor</li>
+						<li>stress tolerance, including extreme weather conditions</li>
+					</ul>
+					<p>Perhaps potassium’s most important function in the plant is that it can activate at least 80 enzymes that regulate the rates of major plant growth reactions. Potassium also influences water-use efficiency. The process of opening and closing of plant leaf pores, called stomates, is regulated by potassium concentration in the guard cells, which surround the stomates. When stomates open, large quantities of potassium move from the surrounding cells into the guard cells. As potassium moves out of the guard cells into surrounding cells, stomates close, therefore potassium plays a key role in the process plants use to conserve water Potassium plays a key part in increasing yields and controlling disease because it improves a crop’s winter hardiness. It enables crops to get a quicker start in the spring and increases vigor so growth can continue throughout the growing season. Plants deficient in potassium don’t grow as robustly and are less resistant to drought, as well as high and low temperatures. They’re also more vulnerable to pests, diseases and nematode attacks. Potassium is also known as the “quality nutrient” because of its important effects on factors such as size, shape, color, taste, shelf life, fiber quality and other qualitative measurements.</p>
+                    <p>To dig even deeper into Potassium, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=macronutrients&sub=potassium" class="dd_more_link">click here</a></p>
+                    <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+						
+						
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="potassium" data-count="16"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- SECONDARY -->
+			
+			<!-- Mg -->
+			
+			<li class="nutrient secondary" id="element-Mg" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Mg</span> Magnesium</h1>
+				<p class="intro">Hidden in the heart of each chlorophyll molecule is an atom of magnesium (Mg), making the nutrient actively involved in photosynthesis. Magnesium also aids in phosphate metabolism, plant respiration and the activation of many enzyme systems.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Mg.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>Magnesium nutrition of plants is frequently overlooked and shortages will adversely impact plant growth. Many essential plant functions require adequate Mg supplies, the most visible being magnesium’s role in root formation, chlorophyll and photosynthesis. Mg is required for crops to capture the sun’s energy for growth and reproduction. All crops require magnesium to capture the sun’s energy for growth and production through photosynthesis. Chlorophyll, the green pigment in plants, is the substance through which photosynthesis occurs. Without chlorophyll, plants couldn’t manufacture food.</p>
+					<p>Magnesium is an essential component of chlorophyll, with each molecule containing 6.7 percent Mg. Magnesium also acts as a phosphorus (P) carrier in plants, which is necessary for cell di¬vision and protein formation. So, Mg is essential for phosphate metabolism, plant respiration and the activation of several enzyme systems.</p>
+					<p>Soils usually contain less Mg than calcium because Mg is not absorbed as tightly by clay and organic matter and is subject to leaching. The supply of available Mg has been and continues to be depleted in some soils, but growers are noticing good responses to fertilization with Mg.</p>
+					<p>Magnesium’s availability to plants often depends on soil pH. Research has shown that Mg availability to the plant decreases at low pH values. In acidic soils with a pH below about 5.8, excessive hydrogen and aluminum can decrease Mg availability and plant uptake. At high pH values (above 7.4), excessive calcium may greatly increase Mg uptake by plants.</p>
+					<p>Magnesium is mobile within the plant and easily translocates from older to younger tissues. When deficiencies occur, the older leaves become damaged first, which may include color loss between the leaf veins, beginning at the leaf margins or tips and progressing inward, giving the leaves a striped appearance.</p>
+                    <p>To dig even deeper into Magnesium, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=nutrient_management&sub=magnesium" class="dd_more_link">click here</a></p>
+					<p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+						
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="magnesium" data-count="9"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- S -->
+			
+			<li class="nutrient secondary" id="element-S" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>S</span> Sulfur</h1>
+				<p class="intro">Sulfur (S) is a part of every living cell and is important to the formation of proteins. Unlike the other secondary nutrients like calcium and magnesium (which plants take up as cations), S is absorbed primarily as the SO<sub>4</sub><sup>2-</sup> anion. It can also enter plant leaves from the air as dioxide (SO<sub>2</sub>) gas.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-S.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>A chain is only as strong as its weakest link. Often overlooked, sulfur can be that weak link in many soil fertility and plant nutrition programs. As of late, there are several reasons for the increased observance of S deficiencies and increased S needs.</p>
+                    <p>Government regulations now restrict the amount of sulfur dioxide (SO<sub>2</sub>) that can be released into the atmosphere from coal-burning furnaces. Most of the S is now removed from natural gas used in home heating and in industry. Also, catalytic converters in new automobiles remove most of the S that was previously returned to the atmosphere when S-containing gasoline was burned in automobiles. In addition, S-free compounds have replaced many of the insecticides and fungicides formerly applied to control insects and diseases in crops. As a result of these government restrictions, less S returns to the soil in rainfall.</p>
+					<p>Sulfur is supplied to plants from the soil by organic matter and minerals, but it’s often present in insufficient quantities and at inopportune times for the needs of many high-yielding crops.</p>
+                        <p>Just like nitrate nitrogen (NO<sub>3</sub><sup>-</sup>), sulfate moves through the soil and can leach beyond the active root zone in some soils during heavy rainfall or irrigation. Sulfate may move back upward toward the soil surface as water evaporates, except in the sandier, coarse-textured soils that may be void of capillary pores. This mobility of sulfate SO<sub>4</sub><sup>2-</sup> makes it difficult to calibrate soil tests and use them as predictive tools for S fertilization needs.</p>
+					<p>In the field, plants deficient in S show pale-green coloring of the younger leaves, although the entire plant can be pale green and stunted in severe cases. Leaves tend to shrivel as the deficiency progresses.</p>
+					<p>Sulfur, like N, is a constituent of proteins, so deficiency symptoms are similar to those of N. Nitrogen-deficiency symptoms are more severe on older leaves, however, because N is a mobile plant nutrient and moves to new growth. Sulfur, on the other hand, is immobile in the plant, so new growth suffers first when S levels are not adequate to meet the plant’s need. This difference is important in distinguishing between N and S deficiencies, particularly in early stages.</p>
+                    <p>To dig even deeper into Sulfur, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=nutrient_management&sub=sulfur" class="dd_more_link">click here</a></p>
+					<p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+											
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="sulfur" data-count="16"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Ca -->
+			
+			<li class="nutrient secondary" id="element-Ca" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Ca</span> Calcium</h1>
+				<p class="intro">Calcium (Ca) is found all around us, and the very existence of plants and animals depends on it. Plants take up Ca as the Ca<sup>2+</sup> cation. Once inside the plant, Ca functions in several essential ways.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Ca.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>The secondary nutrients, calcium (Ca), magnesium (Mg) and sulfur (S), are as important to plant nutrition as the primary nutrients. Deficiency in secondary nutrients, including Ca, can depress plant growth as much as primary nutrient deficiencies do.</p>
+                    <p>Calcium replaces hydrogen (H) ions from the surface of soil particles when limestone is added to reduce soil acidity. This changeover is essential for microorganisms because they turn crop residues into organic matter, release nutrients, and improve soil aggregation and water-holding capacity. Calcium helps enable nitrogen (N)-fixing bacteria that form nodules on the roots of leguminous plants to capture atmospheric N gas and convert it into a form that plants can use.</p>
+					<p>When Ca translocates within the plant, it improves plant roots' ability to absorb other nutrients. It activates a number of plant growth-regulating enzyme systems, helps convert nitrate N into forms needed for protein formation, allows cell wall formation and normal cell division to occur, and contributes to improved disease resistance. Further, Ca, along with Mg and potassium (K), helps neutralize organic acids that form during plant-cell metabolism.</p>
+					<p>Calcium deficiency isn't likely for most crops if producers properly lime soils to adjust pH to optimum levels for crop production. As soils become more acidic, crop growth is often restricted by toxic soil concentrations of aluminum, manganese, or both - not a Ca shortage. Soil testing and a good liming program are the best management practices to prevent these problems.</p>
+					<p>Abnormal development of growing points (in the form of terminal buds) and poor root growth are common symptoms of a Ca deficiency. Young leaves and other new tissue develop symptoms first because Ca does not translocate within the plant. New tissue needs Ca pectate for cell wall formation, so a Ca deficiency can cause gelatinous leaf tips and growing points. In severe cases, the growing point dies and the roots turn black and rot. Calcium deficiency can also cause foliage to take on an abnormal dark green color. Deficient plants might shed blossoms and buds prematurely.</p>
+                    <p>To dig even deeper into Calcium, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=nutrient_management&sub=calcium" class="dd_more_link">click here</a></p>
+				 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+							
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="calcium" data-count="10"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- MICRO -->
+			
+			<!-- B -->
+			
+			<li class="nutrient micro" id="element-B" style="display: none; opacity: 0; margin-left: -40px;">
+				
+				<h1><span>B</span> Boron</h1>
+				<p class="intro">Boron (B) is a micronutrient that is essential for cell wall formation and rapid growing points within the plant, such as reproductive structures. Interestingly, while higher plants require B, animals, fungi and microorganisms do not need this nutrient.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-B.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>The need for boron was established in the late 20’s, but its role and function within the plant continues to be researched and better understood.</p>
+                    <p>Boron deficiencies are widespread across North America. From a global perspective, B is the most widespread micronutrient deficiency after zinc.</p>
+					<p>More than 90 percent of B is found in cell wall structures. B deficiencies generally stunt plant growth by reducing cell wall extension at the growing point. Younger leaves show symptoms first, which indicates B is not readily translocated in the plant. Deficiency symptoms may include reduced flowering; thickened, curled, chlorotic leaves; and soft or necrotic spots in fruits and tubers. Boron deficiencies are more pronounced during drought periods, when root activity is restricted.</p>
+                        <p>Crops remove B from the soil, in the form of boric acid H<sub>3</sub>BO<sub>3</sub><sup>0</sup>. Several factors influence B availability in the soil and uneven distribution within the soil is common. Organic matter is the most important reservoir for B. Extreme hot, dry conditions and extreme cold conditions may decrease O.M. decomposition and reduce the release of B into the soil solution. Plant availability is good over a wide range of pH, from 5.0 to 7.5. Boron is mobile in the soil and is subject to leaching. Leaching is of greater concern in sandy soils and/or in areas of intensive irrigation or high rainfall.</p>
+					<p>Crops vary widely in their need for B, and the line between deficient and toxic amounts is narrower than for any other essential nutrient. B should be used carefully, especially in rotations involving different sensitivities to B. It is important that B fertilizers are applied uniformly in broadcast applications rather than in-furrow situations. Boron placed close to the seed greatly reduces stand counts.</p>
+                    <p>To dig even deeper into Boron, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=micronutrients&sub=boron" class="dd_more_link">click here</a></p>
+		 			<p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+															
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="boron" data-count="10"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Cl -->
+			
+			<li class="nutrient micro" id="element-Cl" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Cl</span> Chlorine</h1>
+				<p class="intro">Plants take up chlorine (Cl) as the chloride (Cl<sup>-</sup>) anion. It’s active in energy reactions in the plant. Most Cl- in soils comes from salt trapped in parent materials, marine aerosols and volcanic emissions. Classified as a micronutrient, Cl- is required by all plants in small quantities.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Cl.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>Research has shown that chloride (Cl-) diminishes the effects of fungal root diseases such as take-all and common root rot on small grains. It also helps suppress infections of small-grain fungal leaf and head diseases. Researchers have correlated lowered incidences of stalk rot in corn to adequate Cl-.</p>
+                    <p>Chloride can be broadcast preplant or top-dressed with N. The most practical source is potassium chloride (KCl), which contains about 47 percent Cl. Preplant, at seeding, and top-dressed applications have all been effective. Higher rates should be applied preplant or topdress. Chloride is highly mobile in the soil and should be managed accordingly.</p>
+					<p>Chloride can negatively affect crops such as tobacco, some soybeans varieties, potatoes and some tree crops. Effects vary with crop varieties or root stock and intended crop use.</p>
+                    
+			 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+									
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="chloride" data-count="6"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Mn -->
+			
+			<li class="nutrient micro" id="element-Mn" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Mn</span> Manganese</h1>
+				<p class="intro">Manganese (Mn) functions primarily as part of enzyme systems in plants. It activates several important metabolic reactions and plays a direct role in photosynthesis. Manganese accelerates germination and maturity while increasing the availability of phosphorus (P) and calcium (Ca).</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Mn.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+										
+					<p>Manganese (Mn) is taken up by plants as the divalent cation Mn<sup>2+</sup>. It functions primarily as a part of enzyme systems in plants. It activates several important metabolic reactions and plays a direct role in photosynthesis by aiding in chlorophyll synthesis. Manganese accelerates germination and maturity, while increasing the availability of phosphate (P) and calcium (Ca).</p>
+                    <p>Manganese is immobile in plants, so deficiency symptoms appear first on younger leaves, with yellowing between the veins. Sometimes a series of brownish-black specks appear. In small grains, grayish areas occur near the base of younger leaves. Manganese deficiencies are most common in high organic matter soils and in those soils with naturally low Mn content and with neutral to alkaline pH. Delayed maturity is another deficiency symptom in some species. Whitish-gray spots on leaves of some cereal crops and shortened internodes in cotton are other Mn-deficiency symptoms.</p>
+					<p>Manganese deficiencies are often associated with high-pH soils, which may result from an imbalance with other nutrients such as Ca, magnesium (Mg) and Iron (Fe). Soil moisture also affects Mn availability. Deficiency symptoms are most severe on high organic matter soils during cool spring months when soils are waterlogged. Symptoms disappear as soils dry and temperatures warm.</p>
+					<p>Manganese deficiencies can be corrected in several ways:</p>
+					<ul>
+						<li>If liming caused the deficiency, keep soil pH below 6.5.</li>
+						<li>Mix soluble salts, such as Mn sulfate (MnSO<sub>4</sub>), with starter fertilizer and apply in bands. High P starter fertilizer helps mobilize Mn into the plant.</li>
+						<li>A field deficiency symptom can be corrected by foliar application.</li>
+					</ul>
+					<p>In some soils, an extremely acidic pH may cause Mn toxicity to crops. Soil pH must be 5.0 or lower before significant toxicity threatens. Yet, toxic Mn levels in plants have been measured up to a pH of 5.8. Liming will eliminate this problem.</p>
+                    <p>To dig even deeper into Manganese, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=micronutrients&sub=manganese" class="dd_more_link">click here</a></p>
+		 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+										
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="manganese" data-count="10"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Fe -->
+			
+			<li class="nutrient micro" id="element-Fe" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Fe</span> Iron</h1>
+				<p class="intro">Iron (Fe) is essential for crop growth and food production. Plants take up Fe as the ferrous (Fe<sup>2+</sup>) cation. Iron is a component of many enzymes associated with energy transfer, nitrogen reduction and fixation, and lignin formation.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Fe.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+					<p>Iron (Fe) is involved in the production of chlorophyll, and Fe chlorosis is easily recognized on Fe-sensitive crops growing on calcareous soils. Iron also composes many enzymes associated with energy transfer, nitrogen reduction and fixation, and lignin formation. Iron is associated with sulfur in plants to form compounds that catalyze other reactions.</p>
+                    <p>Iron deficiencies are mainly manifested in yellowed leaves that result from low levels of chlorophyll. Leaf yellowing first appears on the younger, upper leaves in interveinal tissues. Severe Fe deficiencies cause leaves to turn completely yellow or almost white, and then brown as leaves die.</p>
+					<p>Iron deficiencies occur mainly in calcareous (high pH) soils, although some acidic, sandy soils low in organic matter also may be Fe-deficient. Cool, wet weather enhances Fe deficiencies, especially on soils with marginal levels of available Fe. Poorly aerated or highly compacted land also reduces Fe uptake by plants. Uptake of Fe decreases with increased soil pH, and is adversely affected by high levels of available phosphorus, manganese and zinc in the ground.</p>
+					<p>Since soil applications of most Fe sources are generally ineffective for correcting Fe deficiencies in crops, foliar sprays are the recommended method. The application rate should be high enough to wet the foliage, so spraying a 3 to 4 percent FeSO<sub>4</sub> solution at 20 to 40 gallons per acre is typical. Including a sticker-spreader agent in the spray helps improve its adherence to the plant foliage for increased Fe absorption by the plant. Even so, correcting chlorosis may require more than one foliar Fe application.</p>
+                    <p>To dig even deeper into Iron, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=micronutrients&sub=iron" class="dd_more_link">click here</a></p>
+		 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+										
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="iron" data-count="10"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+            <!-- Ni -->
+			
+			<li class="nutrient micro" id="element-Ni" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Ni</span> Nickel</h1>
+				<p class="intro">Nickel (Ni) was added to the list of essential plant nutrients late in the 20th century. Plants absorb Ni as the divalent cation Ni<sup>2+</sup>. It is required in very small amounts, with the critical level appearing to be about 1.1 parts per million.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<!--<li><a href="#tab-2">Dig Deeper</a></li>-->
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Ni.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+                <p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="nickel" data-count="2"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+            <!-- Cu -->
+			
+			<li class="nutrient micro" id="element-Cu" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Cu</span> Copper</h1>
+				<p class="intro">Copper (Cu) activates enzymes and catalyzes reactions in several plant-growth processes. Vitamin A production is closely linked to the presence of Cu as well, and it helps ensure successful protein synthesis. Classified as a micronutrient, only a small amount of this essential nutrient is needed for plant survival.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Cu.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+					
+						<p>Copper (Cu) is necessary for carbohydrate and nitrogen metabolism, so inadequate Cu results in stunted plants. Copper also is required for lignin synthesis, which is needed for cell wall strength and wilt prevention. Deficiency symptoms of Cu are stem and twig dieback, leaf yellowing, stunted growth, and pale green leaves that wither easily. Symptoms generally appear on young plants.</p>
+                        <p>Copper deficiencies are mainly reported on organic soils and on sandy soils that are low in organic matter. Copper uptake decreases as soil pH increases. Increased phosphorus and iron availability in soils decrease Cu uptake by plants.</p>
+						<p>Recommended Cu rates range from 3 to 10 pounds per acre as CuSO<sub>4</sub> or finely ground CuO. Residual effects of applied Cu are very marked, with researchers noting responses up to eight years after application. Because of these residual effects, soil tests are essential to monitor possible Cu accumulations to toxic levels in soils undergoing Cu fertilization. Plant analyses also can be used to monitor Cu levels in plant tissues. When available Cu levels increase beyond the deficiency range, growers should decrease or stop applying it.</p>
+                        <p>To dig even deeper into Copper, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=micronutrients&sub=copper" class="dd_more_link">click here</a></p>
+		 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+										
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="copper" data-count="6"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Zn -->
+			
+			<li class="nutrient micro" id="element-Zn" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>Zn</span> Zinc</h1>
+                <p class="intro">Zinc (Zn) is taken up by plants as the divalent Zn<sup>2+</sup> cation. It was one of the first micronutrients recognized as essential for plants and the one most commonly limiting yields. Although Zn is required in small amounts, high yields are impossible without it.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Zn.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+
+					<p>Zinc (Zn) deficiency is growing in the Midwest, and it’s more likely to occur in corn than soybean fields. This is happening in part due to earlier planting of corn in cool and moist soil. Also, more residue resulting from higher grain yields places added stress on seedlings to absorb Zn from soil.</p>
+                    <p>Zinc is heavily involved in enzyme systems that regulate the early growth stages, and is vital for fruit, seed and root system development; photosynthesis; formation of plant growth regulators; and crop stress protection. Further, Zn is a team player with nitrogen (N), phosphorus (P) and potassium (K) in many plant-development processes.</p>
+					<p>Soils require Zn in very small amounts compared with N or K. Only about a half-pound of Zn is needed per acre for high-yield (180 bushels per acre) corn production. Sixty-bushel wheat needs about 0.28 pound of Zn per acre. Yet, lack of Zn can limit plant growth, just like N or K, if the soil is deficient or crop uptake is restricted.</p>
+					<p>In addition to being an essential component of various enzyme systems for energy production, Zn is required in protein synthesis and growth regulation. Zinc-deficient plants also exhibit delayed maturity. Since zinc is not mobile in the plant, Zn-deficiency symptoms occur mainly in new growth. This lack of mobility in plants suggests the need for a constant supply of available zinc for optimum growth.</p>
+					<p>The most visible Zn-deficiency symptoms are short internodes (rosetting) and a decrease in leaf size. Chlorotic bands along the midribs of corn, mottled leaves of dry beans and chlorosis of rice are characteristic Zn-deficiency symptoms. Loss of lower bolls of cotton and narrow, yellow leaves in the new growth of citrus also have been identified as symptoms of Zn deficiency. Delayed maturity also indicates Zn-deficient plants.</p>
+					<p>Zinc loss takes place in many ways. Deficiencies are mainly found on sandy soils low in organic matter and on organic soils. They occur more often during cold, wet spring weather and are related to reduced root growth and activity. Zinc uptake by plants decreases with increased soil pH. High levels of available P and iron in soils also adversely affect the uptake of Zn.</p>
+                    <p>To dig even deeper into Zinc, <a href="http://www.cropnutrition.com/cropnutrition.com-library?search=micronutrients&sub=zinc" class="dd_more_link">click here</a></p>
+		 			<p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+										
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="zinc" data-count="12"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- Mo -->
+			
+			<li class="nutrient micro" id="element-Mo" style="opacity: 1; margin-left: 0px; display: list-item;">
+				
+				<h1><span>Mo</span> Molybdenum</h1>
+				<p class="intro">Molybdenum (Mo) is a trace element found in the soil and is required for the synthesis and activity of the enzyme nitrate reductase. Molybdenum is vital for the process of symbiotic nitrogen (N) fixation by Rhizobia bacteria in legume root modules. Considering Mo’s importance in optimizing plant growth, it’s fortunate that Mo deficiencies are relatively rare in most agricultural cropping areas.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-2">Dig Deeper</a></li>
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-3" class="photosTab">Deficiency Photos</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-Mo.jpg"></div>
+				
+				<div class="tab-content tab-2" style="display: none;">
+					<div class="tab-inner">
+										
+					<p>Plants take up molybdenum (Mo) as the MoO<sub>4</sub><sup>2-</sup> anion. It’s required for the synthesis and activity of the enzyme nitrate reductase and. vital for the process of symbiotic nitrogen (N) fixation by Rhizobia bacteria in root nodules. It’s also needed to convert inorganic phosphorus (P) to organic forms in the plant.</p>
+                    <p>Molybdenum deficiencies show up as general yellowing or stunting of the plant, and more specifically in the marginal scorching and cupping or rolling of leaves. An Mo deficiency can also cause N-deficiency symptoms in legume crops such as soybeans and alfalfa, because soil bacteria growing symbiotically in legume root nodules must have Mo to help fix N from the air.</p>
+					<p>Molybdenum deficiencies occur mainly in acidic, sandy soils in humid regions. Sandy soils, in particular, more typically lack Mo than finer-textured soils. Molybdenum becomes more available as soil pH goes up, the opposite of other micronutrients. Since Mo becomes more available with increasing pH, liming will correct a deficiency if soil contains enough of the nutrient. However, seed treatment is the most common way of correcting Mo deficiency because only very small amounts of the nutrient are required.</p>
+					<p>Heavy P applications increase Mo uptake by plants, while heavy sulfur (S) applications decrease Mo uptake. Applying heavy amounts of S-containing fertilizer on soils with a borderline Mo level may induce Mo deficiency.</p>
+					<p>Excessive Mo is toxic, especially to grazing animals. Cattle eating forage with excessive Mo content may develop severe diarrhea.</p>
+                    
+		 <p class="cite">Source: Soil Fertility Manual (2006) by the International Plant Nutrition Institute (IPNI) and the Foundation for Agronomic Research (FAR). </p>
+															
+					</div>
+				</div>
+				
+				<div class="tab-content tab-3 slideshow" style="display: none;">
+					
+					<p>Symptoms of deficiency can vary across crop species, but similarities exist for how nutrient insufficiency impacts plant tissue color and appearance. Nutrient deficiencies are commonly associated with the physical location on the plant<br>(i.e., whether the symptoms are primarily observed on older versus newly formed plant tissue), but these symptoms can spread as the severity of the deficiency progresses.</p>
+					
+					<div class="slides" data-prefix="molybdenum" data-count="3"></div>
+                    <p class="slideshow-nav"><a href="http://www.cropnutrition.com/nutrient-knowledge#" class="prev">« Previous</a> <a href="http://www.cropnutrition.com/nutrient-knowledge#" class="next">Next »</a></p>
+					
+					<p class="cite">All photos are provided courtesy of the International Plant Nutrition Institute (IPNI) and its IPNI Crop Nutrient Deficiency Image Collection. The photos above are a sample of a greater collection, which provides a comprehensive sampling of hundreds of classic cases of crop deficiency from research plots and farm fields located around the world. For access to the full collection, you can visit <a href="http://www.ipni.net/ipniweb/portal.nsf/0/270DC971BEDED1048525786B005CE58C" target="_blank">IPNI's website</a>.</p>
+				</div>
+				
+			</li>
+			
+			<!-- NON-FERTILIZER -->
+			
+			<!-- H -->
+			
+			<li class="nutrient non-fertilizer" id="element-H" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>H</span> Hydrogen</h1>
+				<p class="intro">Hydrogen (H), derived almost entirely from water, is one of the 17 essential nutrients necessary for plant growth. Hydrogen, along with carbon and oxygen, are the three primary elements plant use in the largest amounts, and they perform as the building blocks for plant growth. </p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-H.jpg"></div>
+				
+			</li>
+			
+			<!-- C -->
+			
+			<li class="nutrient non-fertilizer" id="element-C" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>C</span> Carbon</h1>
+				<p class="intro">Carbon (C) is responsible for all life on earth. Carbon dioxide (CO<sub>2</sub>) released into the atmosphere is recycled endlessly as part of the carbon cycle. Plants take CO<sub>2</sub> from the air and use the C for energy, helping to build essential biological compounds such as carbohydrates and proteins.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-C.jpg"></div>
+				
+			</li>
+			
+			<!-- O -->
+			
+			<li class="nutrient non-fertilizer" id="element-O" style="opacity: 0; margin-left: -40px; display: none;">
+				
+				<h1><span>O</span> Oxygen</h1>
+				<p class="intro">Oxygen (O) is responsible for cellular respiration in plants. Plants acquire O by breaking down carbon dioxide (CO<sub>2</sub>) during photosynthesis and end up releasing the majority of it as an unnecessary byproduct, saving a small portion for future energy.</p>
+				
+				<ul class="tabs">
+					<li><a href="http://www.cropnutrition.com/nutrient-knowledge#tab-1" class="selected">Quick Facts</a></li>
+				</ul>
+				
+				<div class="tab-content tab-1"><img src="./Nutrient Knowledge_files/nutrient-facts-O.jpg"></div>
+				
+			</li>
+			
+		</ul>
+		
+	</div>					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footerWrap">
+			<div id="footerTopWrap" class="shadow">
+				<div style="overflow:hidden;" class="footerTop">
+					<div class="left">
+<a target="_blank" href="http://www.mosaicco.com/">The Mosaic Company</a> | 
+<a href="http://www.cropnutrition.com/terms-and-privacy">Terms and Privacy</a> | 
+<a href="http://www.cropnutrition.com/site-map">Site Map</a> | 
+<a class="contact-modal" href="https://www.tfaforms.com/287755">Contact Us</a> 					</div>
+					<div class="center">
+<table class="subscribe">
+  <tbody>
+      <tr class="oddRow">
+          <td>
+              <a href="http://www.cropnutrition.com/subscriptions" target="_self"> <h6><strong>Get Agronomic Expertise &gt;&gt;</strong></h6></a>
+	      <p>For featured stories and exclusive content, sign up to receive communications straight to your inbox and mailbox. </p>
+          </td> 
+          <td>
+              <a href="http://www.cropnutrition.com/subscriptions" target="_self" title="Subscribe"><img src="./Nutrient Knowledge_files/subscribe_envelope_footer.png" alt="subscribe"></a>
+          </td>
+      </tr>
+  </tbody>
+</table> 
+
+
+<!-- 
+<table class="agrisight">
+  <tbody>
+      <tr>
+          <td>
+              <a href="/subscribe" target="_self"> <h6>Subscribe to <strong>AgriSight</strong>&trade;<strong> >></strong></h6></a>
+	      <p>Quarterly Crop Nutrition Fact Sheet</p>
+          </td> 
+          <td>
+              <a href="/subscribe" target="_self" title="Subscribe"><img src="/subscribe_envelope_footer.png?v=1" alt="agrisight"></a>
+          </td>
+      </tr>
+  </tbody>
+</table> 
+
+-->					</div>
+					<div class="right">
+<table class="social">
+  <tbody>
+      <tr class="oddRow">
+          <td>
+              <p>Join Us:</p>
+          </td> 
+          <td>
+              <a href="https://twitter.com/crop_nutrition" target="_blank" title="Twitter"><img src="./Nutrient Knowledge_files/Twitter.png" alt="twitter"></a>
+          </td>
+          <td>
+              <a href="https://www.facebook.com/MosaicCropNutrition" target="_blank" title="Facebook"><img src="./Nutrient Knowledge_files/FaceBook.png" alt="facebook"></a>
+          </td>
+          <td>
+              <a href="https://www.youtube.com/user/CropNutrition" target="_blank" title="YouTube"><img src="./Nutrient Knowledge_files/YouTube.png" alt="youtube"></a>
+          </td>
+      </tr>
+  </tbody>
+</table> 					</div>
+				</div>
+			</div>
+			<div id="footerBottomWrap">
+				<div class="footerBottom">
+					<div class="left">
+©2015 The Mosaic Company. All rights reserved.					</div>
+					<div class="right">
+<a href="http://www.mosaicco.com/" target="_blank" border="0"><img alt="The Mosaic Company" title="The Mosaic Company" src="./Nutrient Knowledge_files/innovationByMosaic.jpg"></a>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+<script type="text/javascript">
+    
+    	var i;
+    	var t;
+    	
+    	function onYouTubePlayerReady(playerid) 
+	{
+            	ytp = document.getElementById("ytvideo"); // get player
+            	ytp.d = ytp.getDuration(); //get total video duration (in seconds)
+            	i = setInterval(checkPlayer, 500); //check video status every half second
+            	
+            	var url = ytp.getVideoUrl(); //get url to video on youtube.com
+            	var vid = url.replace(/^[^v]+v.(.{11}).*/,"$1"); //get video id from url
+            	var apiurl = $.getJSON( 'http://gdata.youtube.com/feeds/api/videos/' + vid + '?v=2&alt=json-in-script&callback=?',
+            		function(data) 
+                	{
+        			t = data.entry.title.$t;
+			});//construct callback to obtain video title 
+	}
+
+    	function onplayerReset() 
+    	{
+      	    	clearInterval(i);
+    	}
+      
+    	function checkPlayer()
+        {
+  		
+            	var p = ytp.getCurrentTime(); //get position in video (in seconds)
+  		var d = ytp.d; //get total duration of video (in seconds)
+    		var c = p/d*100; //calculate percent complete
+  		c = Math.round(c); //round to a whole number
+            	var s = document.location.pathname; 
+        	s = s.substr(s.indexOf('/') + 1); //page name
+  	
+            	if(ytp.isReset) { c = 0; }
+            	ytp.c = c;
+            
+            	if(!ytp.is0)
+                {
+                    	if(c>0)   { _gaq.push(['_trackEvent', 'Videos', t,s]); ytp.is0=true; }
+                }
+            
+            	if(!ytp.is10) 
+                { 	
+                    	if(c>=10) { _gaq.push(['_trackEvent', 'Video Percentage', t,'10%']); ytp.is10=true; }
+  		}
+            
+  		if(!ytp.is50) 
+                { 
+   			if(c>=50) { _gaq.push(['_trackEvent', 'Video Percentage', t,'50%']); ytp.is50=true; }
+  		}
+  		
+            	if(!ytp.is90) 
+                { 
+   			if(c>=90) { _gaq.push(['_trackEvent', 'Video Percentage', t,'100%']); ytp.is90=true; }   
+  		}
+ 	}
+    
+</script>	</div>
+		
+	
+<iframe frameborder="0" scrolling="no" style="border: 0px; display: none; background-color: transparent;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:false,&quot;ss&quot;:true}" style="display: none;"></div></body></html>

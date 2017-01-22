@@ -1,0 +1,65 @@
+/* @group DataTable */
+.evenRow {
+    background-color:  #DAD8D4;
+}
+.DataTable table {
+    margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+.DataTable thead th {
+    text-align: left;
+    padding: 5px 7px;
+    background-color: #B4B0A4;
+    color: #ffffff;
+    font-weight: 700;
+    border-top-style: none;
+    border-bottom: 1px solid #b6b1a9;
+}
+.DataTable tbody tr td {
+    text-align: left;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-right-style: solid;
+    border-right-color: #ffffff;
+    border-right-width: 1px;
+    border-style: none;
+}
+.DataTable tr:nth-child(even) td,
+.DataTable tr:nth-child(2n) td {
+    background-color: #dad8d4;
+    border-right: 1px none #ffffff;
+    border-bottom: 1px solid #b6b1a9;
+}
+.DataTable tr:last-of-type td,
+.DataTable tr:last-child td {
+    border-bottom: none;
+    border: none none none none;
+}
+.DataTable tr td:last-child a,
+.DataTable img {
+    border: none;
+    text-decoration: none;
+    display: block;
+    height: 32px;
+    margin: auto;
+    width: 32px;
+}
+.DataTable tr td:first-child {
+    width: 150px;
+}
+.DataTable>table {
+    border-bottom: 1px solid #b6b1a9;
+    border-collapse: separate;
+}
+.DataTable table th,
+.DataTable table tr td {
+    text-align: center;
+}
+.DataTable table tr td:first-child,
+.DataTable thead th:first-child {
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+}
+/* @end */
